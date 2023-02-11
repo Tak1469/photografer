@@ -1,9 +1,18 @@
+
 import React, { memo } from "react";
+import { HomeImage } from "./HomeImage";
 
 export const Home = memo(() => {
+  console.log('home');
   return (
     <>
-      <h1>Home</h1>
+      <HomeImage
+        word={"dog"}
+        pages={1}
+        urls={"thumb"}
+      />
     </>
   );
 });
+
+

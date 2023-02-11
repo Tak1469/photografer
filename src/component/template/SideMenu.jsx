@@ -17,7 +17,7 @@ export const SideMenu = () => {
             <Links to="/">Home</Links>
           </Item>
           <Item>
-            <Links to="/portfoItemo">PortfoItemo</Links>
+            <Links to="/portfolio">Portfolio</Links>
           </Item>
           <Item>
             <Links to="/about">About</Links>
@@ -46,5 +46,5 @@ margin-bottom: 20px;
 
 `;
 const Links = styled(NavLink)`
-  background-color: ${theme.colors.backgroundColor};
+
 `;
