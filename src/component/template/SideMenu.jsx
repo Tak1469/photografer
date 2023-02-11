@@ -8,26 +8,43 @@ export const SideMenu = () => {
 
   return (
     <>
-      <SideMenuWrap>
-        <ul>
-          <li>
+      <Wrap>
+        <List>
+          <Item>
             <h1>logo</h1>
-          </li>
-          <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/portfolio">Portfolio</NavLink>
-          </li>
-          <li>
-            <NavLink to="/about">About</NavLink>
-          </li>
-        </ul>
-      </SideMenuWrap>
+          </Item>
+          <Item>
+            <Links to="/">Home</Links>
+          </Item>
+          <Item>
+            <Links to="/portfoItemo">PortfoItemo</Links>
+          </Item>
+          <Item>
+            <Links to="/about">About</Links>
+          </Item>
+        </List>
+      </Wrap>
     </>
   );
 }
 
-const SideMenuWrap = styled.div`
+const Wrap = styled.div`
+    width: 250px;
+    height: 100vh;
+    background-color:${theme.colors.backgroundColor};
+    box-sizing: border-box;
+    position: relative;
+`;
+const List = styled.ul`
+    position: absolute;
+    top: 100px;
+    left: 50px;
+`;
+const Item = styled.li`
+padding: 10px;
+margin-bottom: 20px;
+
+`;
+const Links = styled(NavLink)`
   background-color: ${theme.colors.backgroundColor};
 `;
