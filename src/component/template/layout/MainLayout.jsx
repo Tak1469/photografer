@@ -18,5 +18,6 @@ export const MainLayaout = () => {
 
 const Layout = styled.div`
 font-family: ${theme.fonts.mainFont};
+color: ${theme.colors.mainFont};
 display: flex;
 `;

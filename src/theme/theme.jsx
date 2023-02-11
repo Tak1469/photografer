@@ -9,6 +9,7 @@ export const theme = {
     backgroundColor: "#F7F7F7",
     accentColor: "#141E61",
     stageColor: "#929AAB",
+    mainFont: "#454545",
     modalBackgroundColor: "rgba(126, 126, 126, 0.711)",
   },
   fontSize: {
