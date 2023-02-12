@@ -2,8 +2,8 @@ import react, { memo, useEffect } from "react";
 import styled from "styled-components";
 import { useGetImage } from "../../hooks/UseGetImage";
 
-export const AboutImages = memo((props) => {
-  console.log('AboutImages');
+export const PortfolioImages = memo((props) => {
+  console.log('PortfolioImages');
 
   const { word, pages, urls } = props;
   const { images, getImage } = useGetImage([]);
@@ -11,13 +11,12 @@ export const AboutImages = memo((props) => {
   useEffect(() => {
     getImage({ word: word, pages: pages, urls: urls });
   }, []);
-  console.log(images[0]);
 
   return (
     <>
       <MainWrap>
         {images.map((img, index) => (
-          <FrontImage
+          <PortfolioImage
             key={img.id}
             src={img.urls.regular}
             alt={img.alt_description}
@@ -28,16 +27,12 @@ export const AboutImages = memo((props) => {
   );
 });
 
-const FrontImage = styled.img`
-    width: 150px;
-    height: 100%;
+const PortfolioImage = styled.img`
+    width: 120px;
+    height: 100px;
     object-fit: cover;
 `;
 const MainWrap = styled.div`
     flex: 1;
-    display: grid;
-    column-gap: 10px;
-    row-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:  1fr 1fr 1fr;
+    margin-bottom: 30px;
 `;
