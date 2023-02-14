@@ -11,9 +11,6 @@ export const HomeImage = memo((props) => {
   useEffect(() => {
     getImage({ word: word, pages: pages, urls: urls });
   }, []);
-  console.log(images[0]);
-
-
 
   return (
     <>

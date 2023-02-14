@@ -17,7 +17,9 @@ export const MainLayaout = () => {
 }
 
 const Layout = styled.div`
-font-family: ${theme.fonts.mainFont};
-color: ${theme.colors.mainFont};
-display: flex;
+  font-family: ${theme.fonts.mainFont};
+  color: ${theme.colors.mainFont};
+  display: flex;
+  min-height: 100vh;
 `;
+

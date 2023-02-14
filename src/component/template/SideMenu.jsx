@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+
 import { theme } from "../../theme/theme";
 
 export const SideMenu = () => {
@@ -30,7 +31,6 @@ export const SideMenu = () => {
 
 const Wrap = styled.div`
     width: 250px;
-    height: 100vh;
     background-color:${theme.colors.backgroundColor};
     box-sizing: border-box;
     position: relative;
