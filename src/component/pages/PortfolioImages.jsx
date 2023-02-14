@@ -17,6 +17,7 @@ export const PortfolioImages = memo((props) => {
       <MainWrap>
         {images.map((img, index) => (
           <PortfolioImage
+            className="focus"
             key={img.id}
             src={img.urls.regular}
             alt={img.alt_description}
@@ -27,12 +28,28 @@ export const PortfolioImages = memo((props) => {
   );
 });
 
+const MainWrap = styled.div`
+    flex: 1;
+    margin-bottom: 30px;
+    transition: 500ms;
+    :hover{
+      img{
+        opacity: .5;
+        z-index: -1;
+      }
+      } 
+`;
+
+
 const PortfolioImage = styled.img`
     width: 120px;
     height: 100px;
     object-fit: cover;
-`;
-const MainWrap = styled.div`
-    flex: 1;
-    margin-bottom: 30px;
+    transition: 500ms;
+    
+    :hover{
+      &.focus{
+        opacity: 1;
+      }
+      } 
 `;

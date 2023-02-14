@@ -34,6 +34,23 @@ export const About = memo(() => {
 });
 const MainWrap = styled.div`
     flex: 1;
+    animation-name:fadeDownAnime;
+    animation-duration:500ms;
+    animation-fill-mode:forwards;
+    animation-delay: 500ms;
+    opacity:0;
+
+    @keyframes fadeDownAnime{
+      from {
+        opacity: 0;
+      transform: translateY(-100px);
+      }
+
+      to {
+        opacity: 1;
+      transform: translateY(0);
+      }
+    }
 `;
 const AboutDesc = styled.div`
     display: flex;
@@ -41,8 +58,7 @@ const AboutDesc = styled.div`
 const Title = styled.h2`
     font-size: x-large;
     font-weight: bold;
-    margin: 50px 0px;
-    padding-left:  30px;
+    padding: 50px;
 `;
 const AboutDetails = styled.div`
     flex: 1;
@@ -70,9 +86,3 @@ const DetailList = styled.ul`
 const DetailItem = styled.div`
   margin-bottom: 20px;
 `;
-
-
-// const AboutImages = styled.div`
-//     flex: 1;
-//     background-color: #69a5ff;
-// `;
