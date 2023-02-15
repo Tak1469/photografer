@@ -1,5 +1,6 @@
 # Webサイト LP制作 『Photographer』
-![HikeMore_top](https://user-images.githubusercontent.com/123624951/215268626-66883486-4e23-473b-bdc1-5e9c9fb316d0.png)
+![photographer_main](https://user-images.githubusercontent.com/123624951/218995933-3ddc1d9e-cdbd-4220-80cb-e7575efc8eed.png)
+
 ## サイトURL
 /public_html/www.photographer.n-taksan.com
 
@@ -26,4 +27,6 @@ react-transition-groupを使い、『ページ遷移』『モーダル』のア�
 N.Tak
 ご連絡先 nezimakidance@gmail.com
 ## LP IMG
-![LP-HikeMore_all](https://user-images.githubusercontent.com/123624951/215268858-d983d408-6b95-434a-9e59-59ed462756ac.png)
+![photographer_2](https://user-images.githubusercontent.com/123624951/218996054-d166378c-c19c-4061-8131-a5d2203eb9e7.png)
+![photographer_3](https://user-images.githubusercontent.com/123624951/218996065-5e789fd5-0403-4e88-8aaa-d75ee1ab33a2.png)
+
