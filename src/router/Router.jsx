@@ -7,7 +7,6 @@ import { About } from "../component/pages/About";
 import { Home } from "../component/pages/Home";
 import { Portfolio } from "../component/pages/Portfolio";
 import { MainLayaout } from "../component/template/layout/MainLayout";
-import { theme } from "../theme/theme";
 
 export const Router = () => {
   const location = useLocation();
