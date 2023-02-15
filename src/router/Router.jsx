@@ -14,7 +14,7 @@ export const Router = () => {
   const [pageAnimate, setPageAnimate] = useState();
 
   return (
-    <>
+    <Outer>
       <GroupContainer component="div" >
         <CSSTransition
           key={location.key}
@@ -31,9 +31,13 @@ export const Router = () => {
           </Routes>
         </CSSTransition>
       </GroupContainer>
-    </>
+    </Outer>
   );
 }
+const Outer = styled.div`
+  overflow: hidden;
+
+`;
 const GroupContainer = styled(TransitionGroup)`
   .page-enter {
     display: block;

@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 import { theme } from "../../theme/theme";
+import logo from "../../main_logo.png"
 
 export const SideMenu = () => {
 
@@ -12,7 +13,7 @@ export const SideMenu = () => {
       <Wrap>
         <List>
           <Item>
-            <h1>logo</h1>
+            <img src={logo} alt="logo" />
           </Item>
           <Item>
             <Links to="/">Home</Links>
@@ -43,7 +44,9 @@ const List = styled.ul`
 const Item = styled.li`
 padding: 10px;
 margin-bottom: 20px;
-
+  img{
+    width: 180px;
+  }
 `;
 const Links = styled(NavLink)`
 
