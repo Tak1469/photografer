@@ -2,7 +2,7 @@
 ![photographer_main](https://user-images.githubusercontent.com/123624951/218995933-3ddc1d9e-cdbd-4220-80cb-e7575efc8eed.png)
 
 ## サイトURL
-/public_html/www.photographer.n-taksan.com
+https://www.photographer.n-taksan.com
 
 ## サイト概要
 
