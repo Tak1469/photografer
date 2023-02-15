@@ -24,7 +24,6 @@ export const PortfolioImages = memo((props) => {
     setModalImageData(imgData);
   }
 
-  console.log(modalImageData);
 
   return (
     <>
