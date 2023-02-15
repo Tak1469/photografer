@@ -27,10 +27,12 @@ export const HomeImage = memo((props) => {
 });
 
 const FrontImage = styled.img`
+
     width: 100%;
     height: 100vh;
     object-fit: cover;
 `;
 const MainWrap = styled.div`
     flex: 1;
+    overflow: hidden;
 `;
