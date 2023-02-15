@@ -10,7 +10,6 @@ export const useGetImage = () => {
     axios.get(`https://api.unsplash.com/search/photos/?query=${word}&per_page=${pages}&urls=${urls}&client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`)
       .then((res) => {
         setImages(res.data.results);
-        console.log(res.data.results);
       })
       .catch((err) => {
         console.log(err);

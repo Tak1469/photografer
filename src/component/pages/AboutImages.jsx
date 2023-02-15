@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { useGetImage } from "../../hooks/UseGetImage";
 
 export const AboutImages = memo((props) => {
-  console.log('AboutImages');
 
   const { word, pages, urls } = props;
   const { images, getImage } = useGetImage([]);
@@ -11,7 +10,6 @@ export const AboutImages = memo((props) => {
   useEffect(() => {
     getImage({ word: word, pages: pages, urls: urls });
   }, []);
-  console.log(images[0]);
 
   return (
     <>

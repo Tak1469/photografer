@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { useGetImage } from "../../hooks/UseGetImage";
 
 export const HomeImage = memo((props) => {
-  console.log('HomeImage');
 
   const { word, pages, urls } = props;
   const { images, getImage } = useGetImage([]);

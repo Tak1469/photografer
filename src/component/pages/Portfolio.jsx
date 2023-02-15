@@ -34,7 +34,7 @@ export const Portfolio = memo(() => {
 
 const MainWrap = styled.div`
     flex: 1;
-    margin-left: 20px;
+    padding-left: 20px;
     animation-name:fadeDownAnime;
     animation-duration:500ms;
     animation-fill-mode:forwards;

@@ -4,7 +4,6 @@ import styled from "styled-components";
 import { HomeImage } from "./HomeImage";
 
 export const Home = memo(() => {
-  console.log('home');
   return (
     <MainWrap>
       <HomeImage
