@@ -15,13 +15,15 @@ https://www.photographer.n-taksan.com
 -   React
 -   styled-component
 -   react-transition-group
+-   axios
 
 SPAでページ遷移ができるようにいたしました。
 <br>
-仮想のサイトのため、練習にunsplashのAPIを使い画像を取得し表示しております。
+仮想のサイトのため、練習にaxiosでunsplashのAPIを使い画像を取得し表示しております。
 <br>
 react-transition-groupを使い、『ページ遷移』『モーダル』のアニメーションを実装しております。
 <br>
+レスポンシブ対応済みです。
 
 ## 製作者
 N.Tak
