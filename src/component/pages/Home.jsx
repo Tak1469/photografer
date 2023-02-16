@@ -1,7 +1,7 @@
 
 import React, { memo } from "react";
 import styled from "styled-components";
-import { HomeImage } from "./HomeImage";
+import { HomeImage } from "../organisms/HomeImage";
 
 export const Home = memo(() => {
   return (

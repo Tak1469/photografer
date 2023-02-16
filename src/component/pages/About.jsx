@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import styled from "styled-components";
 import { theme } from "../../theme/theme";
-import { AboutImages } from "./AboutImages";
+import { AboutImages } from "../organisms/AboutImages";
 
 export const About = memo(() => {
 
@@ -70,9 +70,6 @@ const AboutImageWrap = styled.div`
 `;
 const AboutImageContainer = styled(AboutImages)`
     flex: 1;
-    ${({ theme }) => theme.media.sm`
-    display:none;
-    `}
 `;
 const SubTitle = styled.h3`
   margin-bottom: 10px;
