@@ -40,7 +40,6 @@ const MainWrap = styled.div`
     animation-fill-mode:forwards;
     animation-delay: 500ms;
     opacity:0;
-
     @keyframes fadeDownAnime{
       from {
         opacity: 0;

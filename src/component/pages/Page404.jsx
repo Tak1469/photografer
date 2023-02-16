@@ -27,7 +27,9 @@ const MainWrap = styled.div`
       font-weight: bold;
       font-family: ${theme.fonts.mainFont};
       font-size: ${theme.fontSize.lg};
-
+      & h1{
+        margin-bottom: 20px;
+      }
       & p{
         font-size: ${theme.fontSize.xl};
       }

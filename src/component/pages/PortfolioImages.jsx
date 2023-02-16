@@ -47,7 +47,7 @@ export const PortfolioImages = memo((props) => {
         >
           <ModalStyle>
             <div className="content">
-              <img className="modalImage" src={modalImageData.urls?.regular} alt={modalImageData.alt_description} />
+              <img className="modalImage" src={modalImageData.urls?.full} alt={modalImageData.alt_description} />
             </div>
             <div className="close" onClick={() => (setModalOpen(!modalOpen))}>close</div>
           </ModalStyle>
@@ -59,6 +59,7 @@ export const PortfolioImages = memo((props) => {
           in={modalOpen}
           timeout={700}
           unmountOnExit
+          onClick={() => (setModalOpen(!modalOpen))}
         >
           <span></span>
         </CSSTransition>
@@ -83,7 +84,14 @@ const PortfolioImage = styled.img`
     height: 100px;
     object-fit: cover;
     transition: 500ms;
-    
+    ${({ theme }) => theme.media.md`
+      width: 80px;
+      height: 60px;
+    `}
+    ${({ theme }) => theme.media.sm`
+      width: 50px;
+      height: 30px;
+    `}
     :hover{
       &.focus{
         opacity: 1;
@@ -122,12 +130,18 @@ const ModalWrap = styled.div`
 
 const ModalStyle = styled.div`
   position: relative;
+  width: 100%;
   padding: 50px 50px 0 50px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  ${({ theme }) => theme.media.md`
+    width: 300px;
+    padding: 25px 25px 0 25px;
+    `}
   .content{
     font-size: 40px;
     font-weight: bold;
@@ -146,10 +160,7 @@ const ModalStyle = styled.div`
 // オーバーレイのスタイル
 const OverlayWrap = styled.div`
 span{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
+  position: absolute;
   z-index: 2;
   top: 0;
   left: 0;
