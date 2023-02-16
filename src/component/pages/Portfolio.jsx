@@ -1,7 +1,8 @@
 import React, { memo } from "react";
 import styled from "styled-components";
 import { theme } from "../../theme/theme";
-import { PortfolioImages } from "./PortfolioImages";
+
+import { PortfolioImages } from "../organisms/PortfolioImages";
 
 export const Portfolio = memo(() => {
 

@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import styled from "styled-components";
 import { theme } from "../../theme/theme";
-import { AboutImages } from "./AboutImages";
+import { AboutImages } from "../organisms/AboutImages";
 
 export const About = memo(() => {
 

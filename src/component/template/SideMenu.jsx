@@ -13,7 +13,6 @@ import logo from "../../main_logo.png"
 
 export const SideMenu = () => {
 
-
   return (
     <>
       <Wrap>
