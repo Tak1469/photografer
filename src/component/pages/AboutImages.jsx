@@ -30,6 +30,15 @@ const FrontImage = styled.img`
     width: 150px;
     height: 100%;
     object-fit: cover;
+    ${({ theme }) => theme.media.lg`
+    width: 120px;
+    `}
+    ${({ theme }) => theme.media.md`
+    width: 150px;
+    `}
+    ${({ theme }) => theme.media.sm`
+    width: 80px;
+    `}
 `;
 const MainWrap = styled.div`
     flex: 1;
@@ -37,5 +46,15 @@ const MainWrap = styled.div`
     column-gap: 10px;
     row-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:  1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr ;
+    ${({ theme }) => theme.media.lg`
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr;
+    `}
+    ${({ theme }) => theme.media.md`
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr 1fr;
+    `}
 `;

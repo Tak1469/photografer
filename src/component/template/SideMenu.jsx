@@ -1,7 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHouse,
+  faPhotoFilm,
+  faAddressCard,
+} from "@fortawesome/free-solid-svg-icons";
 import { theme } from "../../theme/theme";
 import logo from "../../main_logo.png"
 
@@ -16,13 +21,13 @@ export const SideMenu = () => {
             <img src={logo} alt="logo" />
           </Item>
           <Item>
-            <Links to="/">Home</Links>
+            <NavLink to="/"><FontAwesomeIcon icon={faHouse} /> <span>Home</span></NavLink>
           </Item>
           <Item>
-            <Links to="/portfolio">Portfolio</Links>
+            <NavLink to="/portfolio"><FontAwesomeIcon icon={faPhotoFilm} /> <span>Portfolio</span></NavLink>
           </Item>
           <Item>
-            <Links to="/about">About</Links>
+            <NavLink to="/about"><FontAwesomeIcon icon={faAddressCard} /> <span>About</span></NavLink>
           </Item>
         </List>
       </Wrap>
@@ -35,11 +40,22 @@ const Wrap = styled.div`
     background-color:${theme.colors.backgroundColor};
     box-sizing: border-box;
     position: relative;
+
+    ${({ theme }) => theme.media.md`
+    width: 50px;
+    `}
 `;
 const List = styled.ul`
     position: absolute;
     top: 100px;
     left: 50px;
+
+    ${({ theme }) => theme.media.md`
+    left: 10px;
+    span {
+      display:none;
+    }
+    `}
 `;
 const Item = styled.li`
 padding: 10px;
@@ -47,7 +63,10 @@ margin-bottom: 20px;
   img{
     width: 180px;
   }
-`;
-const Links = styled(NavLink)`
-
+  ${({ theme }) => theme.media.md`
+    padding: 0;
+    img{
+      display:none;
+    }
+  `}
 `;

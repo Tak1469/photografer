@@ -17,7 +17,7 @@ export const About = memo(() => {
             <DetailList>
               <DetailItem>鳥取生まれ</DetailItem>
               <DetailItem>大阪を拠点に活動</DetailItem>
-              <DetailItem>自然や動物を主に撮影。最近は海洋生物に興味津々。</DetailItem>
+              <DetailItem>自然や動物を主に撮影。<br/>最近は海洋生物に興味津々。</DetailItem>
             </DetailList>
           </AboutDetails>
           <AboutImageWrap>
@@ -64,13 +64,15 @@ const AboutDetails = styled.div`
     flex: 1;
     margin-left:  20px;
     font-size: ${theme.fontSize.sm};
-    /* background-color: #ff6969; */
 `;
 const AboutImageWrap = styled.div`
     flex: 1;
 `;
 const AboutImageContainer = styled(AboutImages)`
     flex: 1;
+    ${({ theme }) => theme.media.sm`
+    display:none;
+    `}
 `;
 const SubTitle = styled.h3`
   margin-bottom: 10px;
@@ -81,6 +83,9 @@ const Lead = styled.div`
 
 const DetailList = styled.ul`
   margin-left: 20px;
+  ${({ theme }) => theme.media.sm`
+  margin-left: 5px;
+    `}
 `;
 
 const DetailItem = styled.div`

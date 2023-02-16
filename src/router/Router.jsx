@@ -5,6 +5,7 @@ import styled from "styled-components";
 
 import { About } from "../component/pages/About";
 import { Home } from "../component/pages/Home";
+import { Page404 } from "../component/pages/Page404";
 import { Portfolio } from "../component/pages/Portfolio";
 import { MainLayaout } from "../component/template/layout/MainLayout";
 
@@ -28,6 +29,7 @@ export const Router = () => {
               <Route path="/portfolio" element={<Portfolio />} onClick={() => setPageAnimate(!pageAnimate)} />
               <Route path="/about" element={<About />} onClick={() => setPageAnimate(!pageAnimate)} />
             </Route>
+            <Route path="*" element={<Page404 />} />
           </Routes>
         </CSSTransition>
       </GroupContainer>
