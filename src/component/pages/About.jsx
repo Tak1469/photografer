@@ -70,9 +70,6 @@ const AboutImageWrap = styled.div`
 `;
 const AboutImageContainer = styled(AboutImages)`
     flex: 1;
-    ${({ theme }) => theme.media.sm`
-    display:none;
-    `}
 `;
 const SubTitle = styled.h3`
   margin-bottom: 10px;

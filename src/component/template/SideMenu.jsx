@@ -7,6 +7,7 @@ import {
   faPhotoFilm,
   faAddressCard,
 } from "@fortawesome/free-solid-svg-icons";
+
 import { theme } from "../../theme/theme";
 import logo from "../../main_logo.png"
 

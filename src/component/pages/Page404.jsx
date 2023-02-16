@@ -1,6 +1,10 @@
 
 import React, { memo } from "react";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHouse } from "@fortawesome/free-solid-svg-icons";
+
 import { theme } from "../../theme/theme";
 
 export const Page404 = memo(() => {
@@ -9,6 +13,7 @@ export const Page404 = memo(() => {
       <div>
         <h1>SORRY</h1>
         <p>404</p>
+        <NavLink to="/"><FontAwesomeIcon icon={faHouse} /> <span>HOME</span></NavLink>
       </div>
     </MainWrap>
   );
@@ -32,6 +37,7 @@ const MainWrap = styled.div`
       }
       & p{
         font-size: ${theme.fontSize.xl};
+        margin-bottom: 20px;
       }
     }
 `;
